@@ -1,0 +1,8 @@
+body {
+    background-color: cadetblue;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+}
