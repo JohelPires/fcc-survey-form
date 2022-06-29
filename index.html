@@ -1,73 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>FCC Survey Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1 id="title">FCC Survey Form</h1>
     <p id="description">Some description</p>
+
     <form action="" id="survey-form">
-        <label for="name" id="name-label">Nome: </label>
-        <input type="text" id="name" placeholder="digite seu nome">
- 
-        <label for="email" id="email-label">Email: </label>
-        <input type="email" id="email" placeholder="digite seu email">
-        
-        <label for="number" id="number-label">Idade: </label>
-        <input type="number" id="number" placeholder="idade">
+      <label for="name" id="name-label">Nome: </label>
+      <input type="text" id="name" name="name" placeholder="digite seu nome" />
 
-        <label for="dropdown">Qual opção melhor descreve sua posição atual?</label>
-        <select name="dropdown" id="dropdown">
-            <option value="">Selecione uma opção</option>
-            <option value="estudante">Estudante</option>
-            <option value="integral">Trabalho de tempo integral</option>
-            <option value="meio">Trabalho de meio período</option>
-            <option value="outro">Outro</option>
-        </select>
+      <label for="email" id="email-label">Email: </label>
+      <input type="email" id="email" placeholder="digite seu email" />
 
-        <p>Você recomendaria o FreeCodeCamp a um amigo?</p>
-        <input type="radio" name="recommend" id="yes" value="yes">
-        <label for="yes">Sim</label>
-        <input type="radio" name="recommend" id="no" value="no">
-        <label for="no">Não</label>
-        <input type="radio" name="recommend" id="maybe" value="maybe">
-        <label for="maybe">Talvez</label>
+      <label for="number" id="number-label">Idade: </label>
+      <input type="number" id="number" min="18" max="99" placeholder="idade" />
 
-        <p>O que você gostaria que melhorasse?</p>
-        
-        <label for="frontend"><input type="checkbox" name="improved" id="frontend" value="frontend">Projetos Front-End</label>
+      <label for="dropdown"
+        >Qual opção melhor descreve sua posição atual?</label
+      >
+      <select name="dropdown" id="dropdown">
+        <option value="">Selecione uma opção</option>
+        <option value="estudante">Estudante</option>
+        <option value="integral">Trabalho de tempo integral</option>
+        <option value="meio">Trabalho de meio período</option>
+        <option value="outro">Outro</option>
+      </select>
 
-        
-        <label for="backend"><input type="checkbox" name="improved" id="backend" value="backend">Projetos Back-End</label>
+      <p>Você recomendaria o FreeCodeCamp a um amigo?</p>
 
-        
-        <label for="data"><input type="checkbox" name="improved" id="data" value="data">Data Visualization</label>
+      <label for="yes">
+        <input type="radio" name="recommend" id="yes" value="yes" />Sim</label
+      >
 
-        
-        <label for="desafios"><input type="checkbox" name="improved" id="desafios" value="desafios">Desafios</label>
+      <label for="no"
+        ><input type="radio" name="recommend" id="no" value="no" />Não</label
+      >
 
-        
-        <label for="comunidade"><input type="checkbox" name="improved" id="comunidade" value="comunidade">Comunidade Open-Source</label>
+      <label for="maybe"
+        ><input
+          type="radio"
+          name="recommend"
+          id="maybe"
+          value="maybe"
+        />Talvez</label
+      >
 
-        
-        <label for="wiki"><input type="checkbox" name="improved" id="wiki" value="wiki">Wiki</label>
+      <p>O que você gostaria que melhorasse?</p>
 
-        
-        <label for="forum"><input type="checkbox" name="improved" id="forum" value="forum">Forum</label>
+      <label for="frontend"
+        ><input
+          type="checkbox"
+          name="improved"
+          id="frontend"
+          value="frontend"
+        />Projetos Front-End</label
+      >
 
-        
-        <label for="cursos"><input type="checkbox" name="improved" id="cursos" value="cursos">Cursos Adicionais</label>
+      <label for="backend"
+        ><input
+          type="checkbox"
+          name="improved"
+          id="backend"
+          value="backend"
+        />Projetos Back-End</label
+      >
 
-        <label for="textarea">Comentários ou sugestões?</label>
-        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Digite seu comentário aqui..."></textarea>
+      <label for="data"
+        ><input type="checkbox" name="improved" id="data" value="data" />Data
+        Visualization</label
+      >
 
-        <button type="submit" id="submit">Enviar</button>
+      <label for="desafios"
+        ><input
+          type="checkbox"
+          name="improved"
+          id="desafios"
+          value="desafios"
+        />Desafios</label
+      >
 
+      <label for="comunidade"
+        ><input
+          type="checkbox"
+          name="improved"
+          id="comunidade"
+          value="comunidade"
+        />Comunidade Open-Source</label
+      >
+
+      <label for="wiki"
+        ><input
+          type="checkbox"
+          name="improved"
+          id="wiki"
+          value="wiki"
+        />Wiki</label
+      >
+
+      <label for="forum"
+        ><input
+          type="checkbox"
+          name="improved"
+          id="forum"
+          value="forum"
+        />Forum</label
+      >
+
+      <label for="cursos"
+        ><input
+          type="checkbox"
+          name="improved"
+          id="cursos"
+          value="cursos"
+        />Cursos Adicionais</label
+      >
+
+      <label for="textarea">Comentários ou sugestões?</label>
+      <textarea
+        name="textarea"
+        id="textarea"
+        cols="30"
+        rows="10"
+        placeholder="Digite seu comentário aqui..."
+      ></textarea>
+
+      <button type="submit" id="submit">Enviar</button>
     </form>
-    
-</body>
+
+    <footer>2022 &copy; Johel Pires</footer>
+  </body>
 </html>
