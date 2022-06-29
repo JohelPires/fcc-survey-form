@@ -10,13 +10,13 @@ User Stories:
 
 5.  [x] Inside the form element, you are required to enter your email in an input field that has an id of email
 
-6.  [ ] If you enter an email that is not formatted correctly, you will see an HTML5 validation error
+6.  [x] If you enter an email that is not formatted correctly, you will see an HTML5 validation error
 
 7.  [x] Inside the form, you can enter a number in an input field that has an id of number
 
-8.  [ ] If you enter non-numbers in the number input, you will see an HTML5 validation error
+8.  [x] If you enter non-numbers in the number input, you will see an HTML5 validation error
 
-9.  [ ] If you enter numbers outside the range of the number input, which are defined by the min and max attributes, you will see an HTML5 validation error
+9.  [x] If you enter numbers outside the range of the number input, which are defined by the min and max attributes, you will see an HTML5 validation error
 
 10. [x] For the name, email, and number input fields, you can see corresponding label elements in the form, that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label"
 

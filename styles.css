@@ -21,15 +21,19 @@ body {
   font-weight: 200;
 }
 
-h1 {
+#title {
   font-weight: bold;
+  margin: 0;
+}
+#description {
+  margin-bottom: 15px;
 }
 
 #survey-form {
   display: flex;
   flex-direction: column;
   background-color: rgba(69, 98, 141, 0.5);
-  max-width: 500px;
+  max-width: 650px;
   padding: 20px;
   margin: 20px;
   border-radius: 7px;
@@ -37,10 +41,26 @@ h1 {
     0 20px 20px -15px rgba(0, 0, 0, 0.7), 0 10px 30px -25px rgba(0, 0, 0, 0.9);
 }
 
-label {
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.check {
+  width: 19px;
+  height: 19px;
+  border: none;
+  outline: none;
+}
+
+label,
+p {
   margin-top: 7px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   padding: 3px;
+}
+p {
+  margin: 20px 0 0 0;
 }
 
 input,

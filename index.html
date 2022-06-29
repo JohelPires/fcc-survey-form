@@ -8,18 +8,32 @@
     <title>FCC Survey Form</title>
   </head>
   <body>
-    <h1 id="title">FCC Survey Form</h1>
-    <p id="description">Some description</p>
+    <h1 id="title">Pesquisa FreeCodeCamp</h1>
+    <p id="description">
+      Agradecemos por participar da pesquisa e melhorar a plataforma.
+    </p>
 
     <form action="" id="survey-form">
       <label for="name" id="name-label">Nome: </label>
       <input type="text" id="name" name="name" placeholder="digite seu nome" />
 
       <label for="email" id="email-label">Email: </label>
-      <input type="email" id="email" placeholder="digite seu email" />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="digite seu email"
+      />
 
       <label for="number" id="number-label">Idade: </label>
-      <input type="number" id="number" min="18" max="99" placeholder="idade" />
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="18"
+        max="99"
+        placeholder="idade"
+      />
 
       <label for="dropdown"
         >Qual opção melhor descreve sua posição atual?</label
@@ -34,16 +48,29 @@
 
       <p>Você recomendaria o FreeCodeCamp a um amigo?</p>
 
-      <label for="yes">
-        <input type="radio" name="recommend" id="yes" value="yes" />Sim</label
+      <label class="checkbox" for="yes">
+        <input
+          class="check"
+          type="radio"
+          name="recommend"
+          id="yes"
+          value="yes"
+        />Sim</label
       >
 
-      <label for="no"
-        ><input type="radio" name="recommend" id="no" value="no" />Não</label
-      >
-
-      <label for="maybe"
+      <label class="checkbox" for="no"
         ><input
+          class="check"
+          type="radio"
+          name="recommend"
+          id="no"
+          value="no"
+        />Não</label
+      >
+
+      <label class="checkbox" for="maybe"
+        ><input
+          class="check"
           type="radio"
           name="recommend"
           id="maybe"
@@ -53,8 +80,9 @@
 
       <p>O que você gostaria que melhorasse?</p>
 
-      <label for="frontend"
+      <label class="checkbox" for="frontend"
         ><input
+          class="check"
           type="checkbox"
           name="improved"
           id="frontend"
@@ -62,8 +90,9 @@
         />Projetos Front-End</label
       >
 
-      <label for="backend"
+      <label class="checkbox" for="backend"
         ><input
+          class="check"
           type="checkbox"
           name="improved"
           id="backend"
@@ -71,13 +100,19 @@
         />Projetos Back-End</label
       >
 
-      <label for="data"
-        ><input type="checkbox" name="improved" id="data" value="data" />Data
-        Visualization</label
+      <label class="checkbox" for="data"
+        ><input
+          class="check"
+          type="checkbox"
+          name="improved"
+          id="data"
+          value="data"
+        />Data Visualization</label
       >
 
-      <label for="desafios"
+      <label class="checkbox" for="desafios"
         ><input
+          class="check"
           type="checkbox"
           name="improved"
           id="desafios"
@@ -85,8 +120,9 @@
         />Desafios</label
       >
 
-      <label for="comunidade"
+      <label class="checkbox" for="comunidade"
         ><input
+          class="check"
           type="checkbox"
           name="improved"
           id="comunidade"
@@ -94,8 +130,9 @@
         />Comunidade Open-Source</label
       >
 
-      <label for="wiki"
+      <label class="checkbox" for="wiki"
         ><input
+          class="check"
           type="checkbox"
           name="improved"
           id="wiki"
@@ -103,8 +140,9 @@
         />Wiki</label
       >
 
-      <label for="forum"
+      <label class="checkbox" for="forum"
         ><input
+          class="check"
           type="checkbox"
           name="improved"
           id="forum"
@@ -112,8 +150,9 @@
         />Forum</label
       >
 
-      <label for="cursos"
+      <label class="checkbox" for="cursos"
         ><input
+          class="check"
           type="checkbox"
           name="improved"
           id="cursos"
@@ -121,7 +160,7 @@
         />Cursos Adicionais</label
       >
 
-      <label for="textarea">Comentários ou sugestões?</label>
+      <label class="checkbox" for="textarea">Comentários ou sugestões?</label>
       <textarea
         name="textarea"
         id="textarea"
